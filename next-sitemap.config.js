@@ -1,9 +1,9 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://domain.com", //  Replace with your site URL
-  outDir: "./out", //  Replace with your out directory (build result)
-  exclude: ["/admin", "/admin/**", "/admin/**/**", "/admin/**/**/**"], // You can exclude multiple routes
-
+  siteUrl: "https://domain.com",
+  outDir: "./out",
+  exclude: ["/admin", "/admin/**", "/admin/**/**", "/admin/**/**/**"],
+  sitemapSize: 7000,
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [
@@ -18,6 +18,4 @@ module.exports = {
       },
     ],
   },
-
-  // ...other options
 };
